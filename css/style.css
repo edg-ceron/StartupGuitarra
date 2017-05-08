@@ -247,12 +247,17 @@ footer .contenedor{
   margin-bottom: 10px;
 }
 
-
-
 .sexo{
   margin-top: 10px;
 }
 
 .tabla{
   margin: 50px 0px;
+}
+
+@media screen and (max-width:800px) {
+  body{
+    background:#247B7B;
+    border: 15px solid #142C52;
+  }
 }

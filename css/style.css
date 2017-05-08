@@ -32,7 +32,13 @@ body{
   padding: 20px;
 
 }
-
+button{
+  border-radius: 8px;
+  border: none;
+  background: #df324e;
+  color: white;
+  padding: 7px;
+}
 .portada button{
   margin-bottom: 70px;
 }
@@ -40,11 +46,13 @@ body{
 .menu{
   font-size: 24px;
   display: inline-block;
+
 }
 
 .menu li{
   display: inline-block;
   margin-left: 30px;
+
 }
 
 .logotipo{
@@ -59,5 +67,39 @@ body{
 .contenedor{
   width: 800px;
   margin: auto;
+}
 
+.guitarra {
+  margin: 10px;
+  padding: 10px;
+  /*overflow: hidden;*/                                            /*Ajusta el tamaño de las intercecciones tomando el tamaño mayor para que no que desajustada*/
+  border: 1px solid #1F313C;
+  border-radius: 8px;                                    /*Para marcar el margen del bloque*/
+}
+
+.guitarra ol{
+  padding: 0px;
+}
+
+.right{
+  float: right;
+  position: relative;
+  top: -127px;                                             /*se utiliza para hacer flotar una clase y ponerla al gusto sin tener que mofidicar el codigo*/
+}
+
+.left{
+  float: left;
+  position: relative;
+  top: 80px;
+}
+.contenedor-guitarra-a{
+  padding-left: 20px;
+}
+.contenedor-guitarra-b{
+  margin-left: 370px;
+  padding-left: 20;
+}
+
+.header{
+  position: relative;
 }

@@ -65,12 +65,40 @@
   <div class="contenedor">
   <div class="contacto">
     <img src="imagenes/invie-white.png" alt="logotipo blanco">
-    <a href="tel: +524642325"><strong>Telofono </strong><span>12345675</span></a>
-    <a href="mailto: contacto@invie.com"><strong>E-mail </strong>contacto@invie.com<span></span></a>
+    <a href="tel:+524642325"><strong>Telofono </strong><span>12345675</span></a>
+    <a href="mailto:contacto@invie.com"><strong>E-mail </strong>contacto@invie.com<span></span></a>
   </div>
-  <div class="formulario">
-    formulario
+  <form class="formulario">
+    <label for="nombre">Nombre:</label>
+    <input type="text" required id ="nombre" name="nombre"/>
+    <label for="email">E-mail::</label>
+    <input type="email" required placeholder="@example.com" id="email" name="email"/>
+    <div class="sexo">
+    <label for="mujer">Mujer:
+      <input type="radio" id="mujer" name ="sexo" value="mujer">
+    </label>
+    <label for="hombre">Hombre:
+      <input type="radio" id="hombre" name="sexo" value="hombre">
+    </label>
   </div>
+  <div class="intereses">
+    <label for="cotizacion">
+    <input type="checkbox" id="cotizacion" name="intereses" value="cotizacion"> Cotizacion
+    </label>
+    <label for="reclamos">
+    <input type="checkbox" id="reclamos" name="intereses" value="reclamos"> Reclamos
+    </label>
+    <label for="comentarios">
+    <input type="checkbox" id="comentarios" name="intereses" value="comentarios"> Comentarios
+    </label>
+    <label for="otros">
+    <input type="checkbox" id="otros" name="intereses" value="otros"> Otros
+    </label>
+  </div>
+  <label for="comentarios">Comentarios</label>
+  <textarea name="comentarios" id="comentarios" rows="7" cols="30"></textarea>
+  <input type="submit"  value="Enviar">
+  </form>
   </div>
 </footer>
  </body>

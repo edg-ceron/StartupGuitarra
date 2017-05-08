@@ -1,38 +1,61 @@
+.titulo {
+  font-size: 70px;
+
+}
+.titulo-a{
+  font-size: 24px;
+}
+
+title-b{
+  font-size: 50px;
+}
+.guitarras{
+  color: #1F313C
+}
+
+.guitarras h2{
+  font-size: 35px;
+}
+
+.portada{
+  background-image: url("../imagenes/background.png");
+  color: white;
+}
+
+.menu{
+  font-size: 24px;
+}
+
+
 /*tipo de selecto {
   propiedad: valor;
   propiedad-2:valor;
 }*/
 /*----"*"para todo en general-----*/
-*{
+/**{
   border: 1px solid red;
   margin: 10px;
 }
 /*selector de etiqueta*/
-header{
+/*header{
   background: #46859E;
-
 }
-
 section{
   background: #567F60;
 }
-
 /*selector descendente*/
-article h3{
-  color: orange;
-}
-
+/*article h3{
+  color: orange;*/
+/*}
 /*selectores de clase "."*/
-.title-a{
+/*.title-a{
   background: #DC4621;
 }
-
 .title-b{
   background: green
 }
-
 /*selector de id"#"*/
-#header{
+/*#header{
   border: 4px solid black;
 }
 #portada{
@@ -40,4 +63,4 @@ article h3{
 }
 #guitarras{
   border: 4px solid blue;
-}
+}*/*/*/*/*/

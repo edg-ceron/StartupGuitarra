@@ -6,33 +6,35 @@
  </head>
 
  <body>
-<header><!-- header -->
-
+<header id="header"><!-- header -->
      <figure><!-- logotipo -->
        <img src="imagenes/invie.png"width="186" height="60" alt="Logotipo Invie"/>
      </figure>
      <nav><!-- menu -->
-       <ul>                                       <!-- **LISTA NO ORDENADA -->
+       <ul>                                       <!-- **LISTA NO ORDENADA "º"-->
          <li>                                     <!-- **OBJETO DE LA LISTA -->
-         <a>Home</a>
+         <a href="index.html">Home</a>            <!-- <a>PODEMOS PONER EL COMANDO href ES PARA DIRECCIONAR HACIA UNA RUTA EN ESTE CASO UN HTML -->
+         </li>
+         <li>                                     <!-- **OBJETO DE LA LISTA -->
+         <a href="#guitarras">Guitarras</a>            <!-- href ES PARA DIRECCIONAR HACIA UNA RUTA EN ESTE CASO UN HTML -->
          </li>
          <li>
-         <a>Precio</a>
+         <a href="precios.html">Precio</a>
          </li>
        </ul>
      </nav>
    </header>
-   <section><!-- portada -->
+   <section id="portada"><!-- portada -->
      <h1>Guitarras inviesibles</h1><!-- titulo -->
      <h3>La mejor opción de guitarras, calidad por precio </h3><!-- resumen -->
      <button>Conoce mas</button><!-- boton -->
    </section>
-   <section><!--guitarras -->
+   <section id="guitarras"><!--guitarras -->
      <h2>Nuestras guitarras</h2><!-- titulo -->
      <article><!-- guitarras 1 acustica -->                  <!-- **ES COMO UN TIPO DE BLOQUE-->
        <img src="imagenes/invie-acustica.png"alt="Guitarra Acustica"width="200" height="200"/>
        <h3>Invie Acustica</h3>
-       <ol>                                          <!-- **LISTA  ORDENADA -->
+       <ol>                                          <!-- **LISTA  ORDENADA "1,2,3,4"-->
          <li>Estilo Vintage</li>
          <li>Madera pura</li>
          <li>Incluye estuche de aluminio</li>

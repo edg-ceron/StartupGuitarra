@@ -31,7 +31,7 @@
      <div class="contenedor">
        <h1 class="titulo">Guitarras Inviesibles</h1><!-- titulo -->
        <h3 class="title-a">La mejor opción de guitarras, calidad por precio </h3><!-- resumen -->
-       <button>Conoce mas</button><!-- boton -->
+       <button class="button">Conoce mas</button><!-- boton -->
      </div>
 
    </section>
@@ -69,13 +69,14 @@
     <a href="mailto:contacto@invie.com"><strong>E-mail </strong>contacto@invie.com<span></span></a>
   </div>
   <form class="formulario">
+    <div class="col1">
     <label for="nombre">Nombre:</label>
     <input type="text" required id ="nombre" name="nombre"/>
     <label for="email">E-mail::</label>
     <input type="email" required placeholder="@example.com" id="email" name="email"/>
     <div class="sexo">
     <label for="mujer">Mujer:
-      <input type="radio" id="mujer" name ="sexo" value="mujer">
+      <input type="radio" id="mujer" checked name ="sexo" value="mujer">
     </label>
     <label for="hombre">Hombre:
       <input type="radio" id="hombre" name="sexo" value="hombre">
@@ -83,7 +84,7 @@
   </div>
   <div class="intereses">
     <label for="cotizacion">
-    <input type="checkbox" id="cotizacion" name="intereses" value="cotizacion"> Cotizacion
+    <input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion"> Cotizacion
     </label>
     <label for="reclamos">
     <input type="checkbox" id="reclamos" name="intereses" value="reclamos"> Reclamos
@@ -95,9 +96,12 @@
     <input type="checkbox" id="otros" name="intereses" value="otros"> Otros
     </label>
   </div>
+</div>
+  <div class="col2">
   <label for="comentarios">Comentarios</label>
   <textarea name="comentarios" id="comentarios" rows="7" cols="30"></textarea>
-  <input type="submit"  value="Enviar">
+  <input type="submit"  value="Enviar" class="button">
+    </div>
   </form>
   </div>
 </footer>

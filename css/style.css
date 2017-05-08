@@ -1,10 +1,12 @@
-
 body{
-font-family: 'Allerta', sans-serif;
+  font-family: 'Allerta', sans-serif;                      /*Tipo de letra*/
+  margin: 0px;
 }
 .titulo {
-  font-size: 70px;
+  font-size: 70px;                                       /*Tamaño de letra */
   font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0;
+  margin-top: 70px;
 }
 .titulo-a{
   font-size: 24px;
@@ -12,9 +14,12 @@ font-family: 'Allerta', sans-serif;
 
 .title-b{
   font-size: 50px;
+  margin-bottom: 20px;
 }
 .guitarras{
-  color: #1F313C
+  color: #1F313C;
+  width: 800px;
+  margin: auto;                                         /*Color de letra*/
 }
 
 .guitarras h2{
@@ -23,12 +28,34 @@ font-family: 'Allerta', sans-serif;
 }
 
 .portada{
-  background-image: url("../imagenes/background.png");
+  background-image: url("../imagenes/background.png");     /*Imagen como fondo*/
   color: white;
+  padding: 20px;
+  width: 800px;
+  margin: auto;
+}
+
+.portada button{
+  margin-bottom: 70px;
 }
 
 .menu{
   font-size: 24px;
+  display: inline-block;
+}
+
+.menu li{
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.logotipo{
+  display: inline-block;
+}
+
+.header{
+  width: 800px;
+  margin: auto;
 }
 
 

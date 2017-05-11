@@ -6,8 +6,7 @@
    <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">
    <link rel="stylesheet" href ="css/style.css"/>
    <!-- <link rel="stylesheet" media="(max-width:800px)" href="css/media-querie.css"> SI QUEREMOS AGREGAR EL MEDIA QUERIE EN UN EXTERNO-->
-
-
+   <meta name="viewport" content="width=device-width, initial-scale=1">
  </head>
 
  <body>
@@ -16,7 +15,8 @@
        <figure class="logotipo"><!-- logotipo -->
          <img src="Imagenes/invie.png"width="186" height="60" alt="Logotipo Invie"/>
        </figure>
-       <nav class="menu"><!-- menu -->
+       <span class="burguer-button icon-menu" id="burguer-button"></span>
+       <nav class="menu" id="menu"><!-- menu -->
          <ul>                                       <!-- **LISTA NO ORDENADA "º"-->
            <li>                                     <!-- **OBJETO DE LA LISTA -->
              <a href="index.html"> Home</a>            <!-- <a>PODEMOS PONER EL COMANDO href ES PARA DIRECCIONAR HACIA UNA RUTA EN ESTE CASO UN HTML -->
@@ -63,53 +63,76 @@
      </article>
 
    </section>
-<footer class="footer">
-  <div class="contenedor">
-  <div class="contacto">
-    <img src="Imagenes/invie-white.png" alt="logotipo blanco">
-    <a href="tel:+524642325"><strong>Telofono </strong><span>12345675</span></a>
-    <a href="mailto:contacto@invie.com"><strong>E-mail </strong>contacto@invie.com<span></span></a>
-  </div>
-  <form class="formulario">
-    <div class="col1">
-    <label for="nombre">Nombre:</label>
-    <input type="text" required id ="nombre" name="nombre"/>
-    <label for="email">E-mail::</label>
-    <input type="email" required placeholder="@example.com" id="email" name="email"/>
-    <div class="sexo">
-    <label for="mujer">Mujer:
-      <input type="radio" id="mujer" checked name ="sexo" value="mujer">
-    </label>
-    <label for="hombre">Hombre:
-      <input type="radio" id="hombre" name="sexo" value="hombre">
-    </label>
-  </div>
-  <div class="intereses">
-    <label for="cotizacion">
-    <input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion"> Cotizacion
-    </label>
-    <label for="reclamos">
-    <input type="checkbox" id="reclamos" name="intereses" value="reclamos"> Reclamos
-    </label>
-    <label for="comentarios">
-    <input type="checkbox" id="comentarios" name="intereses" value="comentarios"> Comentarios
-    </label>
-    <label for="otros">
-    <input type="checkbox" id="otros" name="intereses" value="otros"> Otros
-    </label>
-  </div>
-</div>
-  <div class="col2">
-  <label for="comentarios">Comentarios</label>
-  <textarea name="comentarios" id="comentarios" rows="7" cols="30"></textarea>
-  <input type="submit"  value="Enviar" class="button">
-    </div>
-  </form>
-  </div>
-</footer>
+   <footer class="footer">
+     <div class="contenedor">
+       <div class="contacto">
+         <img src="Imagenes/invie-white.png" alt="logotipo blanco">
+         <a href="tel:+524642325"><strong>Telofono </strong><span>12345675</span></a>
+         <a href="mailto:contacto@invie.com"><strong>E-mail </strong>contacto@invie.com<span></span></a>
+       </div>
+       <form class="formulario">
+         <div class="col1">
+           <label for="nombre">Nombre:</label>
+           <input type="text" required id ="nombre" name="nombre"/>
+           <label for="email">E-mail::</label>
+           <input type="email" required placeholder="@example.com" id="email" name="email"/>
+           <div class="sexo">
+             <label for="mujer">Mujer:
+               <input type="radio" id="mujer" checked name ="sexo" value="mujer">
+             </label>
+             <label for="hombre">Hombre:
+               <input type="radio" id="hombre" name="sexo" value="hombre">
+             </label>
+           </div>
+           <div class="intereses">
+             <label for="cotizacion">
+               <input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion"> Cotizacion
+             </label>
+             <label for="reclamos">
+               <input type="checkbox" id="reclamos" name="intereses" value="reclamos"> Reclamos
+             </label>
+             <label for="comentarios">
+               <input type="checkbox" id="comentarios" name="intereses" value="comentarios"> Comentarios
+             </label>
+             <label for="otros">
+               <input type="checkbox" id="otros" name="intereses" value="otros"> Otros
+             </label>
+           </div>
+         </div>
+         <div class="col2">
+           <label for="comentarios">Comentarios</label>
+           <textarea name="comentarios" id="comentarios" rows="7" cols="30"></textarea>
+           <input type="submit"  value="Enviar" class="button">
+         </div>
+       </form>
+     </div>
+   </footer>
+   <script>
+              //  Media Query en javascript
+   var consulta =window.matchMedia("(max-width: 500px)");
+   consulta.addListener(mediaQuery);
+
+   var $burguerButton = document.getElementById("burguer-button")
+   var $menu = document.getElementById("menu");
+   function toogleMenu(){
+     $menu.classList.toggle("active")
+   };
+   function mediaQuery(){
+     if (consulta.matches) {
+       $burguerButton.addEventListener("touchstart", toogleMenu);
+       console.log("se cumplio la condicion");
+
+     }else{
+       $burguerButton.removeEventListener("touchstart", toogleMenu);
+       console.log("no se cumplio la condicon ");
+     }
+   }
+   mediaQuery();
+  //  $burguerButton.addEventListener("touchstart", toogleMenu);
+  //  function toogleMenu(){
+  //    $menu.classList.toggle("active")
+  //  };
+               //  Media Query en javascript
+   </script>
  </body>
-
-
-
-
 </html>

@@ -39,6 +39,9 @@
    </section>
    <section id="guitarras" class="guitarras contenedor"><!--guitarras -->
      <h2>Nuestras guitarras</h2><!-- titulo -->
+     <div class="video-responsive-contenedor">
+       <iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/2DU31dRGmAI" frameborder="0" allowfullscreen></iframe>
+     </div>
      <article class="guitarra"><!-- guitarras 1 acustica -->                  <!-- **ES COMO UN TIPO DE BLOQUE-->
        <img class="right" data-src="Imagenes/invie-acustica.png"alt="Guitarra Acustica"width="350" />
       <div class="contenedor-guitarra-a">
@@ -107,7 +110,7 @@
        </form>
      </div>
    </footer>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>           <!-- Libreria para el blazy, optimizacion de imagenes -->
    <script>
               //  Media Query en javascript
    var consulta =window.matchMedia("(max-width: 500px)");
@@ -130,7 +133,7 @@
    }
    mediaQuery();
    //Lazy loading
-   var bLazy = new Blazy({
+   var bLazy = new Blazy({                                         //funcion para optimizar la carga de las imgenes
     selector: "img"
 });
   //  $burguerButton.addEventListener("touchstart", toogleMenu);

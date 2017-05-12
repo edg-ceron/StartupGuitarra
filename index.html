@@ -40,7 +40,7 @@
    <section id="guitarras" class="guitarras contenedor"><!--guitarras -->
      <h2>Nuestras guitarras</h2><!-- titulo -->
      <article class="guitarra"><!-- guitarras 1 acustica -->                  <!-- **ES COMO UN TIPO DE BLOQUE-->
-       <img class="right" src="Imagenes/invie-acustica.png"alt="Guitarra Acustica"width="350" />
+       <img class="right" data-src="Imagenes/invie-acustica.png"alt="Guitarra Acustica"width="350" />
       <div class="contenedor-guitarra-a">
         <h3 class="title-b">Invie Acustica</h3>
         <ol>                                          <!-- **LISTA  ORDENADA "1,2,3,4"-->
@@ -51,7 +51,7 @@
       </div>
      </article>
      <article class="guitarra b" > <!-- guitarra 2 clasica-->
-       <img class="left" src="Imagenes/invie-classic.png"alt="Guitarra Clasica" width="350" />
+       <img class="left" data-src="Imagenes/invie-classic.png"alt="Guitarra Clasica" width="350" />                           <!-- /* data-src se utiliza para optimizar las imagenes, al momento de hacer scroll en el area no visible*/ -->
        <div class="contenedor-guitarra-b">
          <h3 class="title-b">Invie Classic</h3>
          <ol>
@@ -66,7 +66,7 @@
    <footer class="footer">
      <div class="contenedor">
        <div class="contacto">
-         <img src="Imagenes/invie-white.png" alt="logotipo blanco">
+         <img data-src="Imagenes/invie-white.png" alt="logotipo blanco">
          <a href="tel:+524642325"><strong>Telofono </strong><span>12345675</span></a>
          <a href="mailto:contacto@invie.com"><strong>E-mail </strong>contacto@invie.com<span></span></a>
        </div>
@@ -107,6 +107,7 @@
        </form>
      </div>
    </footer>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
    <script>
               //  Media Query en javascript
    var consulta =window.matchMedia("(max-width: 500px)");
@@ -128,6 +129,10 @@
      }
    }
    mediaQuery();
+   //Lazy loading
+   var bLazy = new Blazy({
+    selector: "img"
+});
   //  $burguerButton.addEventListener("touchstart", toogleMenu);
   //  function toogleMenu(){
   //    $menu.classList.toggle("active")

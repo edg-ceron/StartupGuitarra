@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
  <head>
+   <meta charset="utf-8">
    <title>Invie - Guitarras </title>
    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->  <!-- PAsamos esta liga, abajo para la optimizacion de la pagina en Allerta|Montserrat que son las dos fuentes  -->
    <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">
@@ -13,7 +14,7 @@
    <section id="portada" class="portada background"><!-- portada -->
      <header id="header" class="header contenedor"><!-- header -->
        <figure class="logotipo"><!-- logotipo -->
-         <img src="Imagenes/invie.png"width="186" height="60" alt="Logotipo Invie"/>
+         <img src="Imagenes/invie.png" srcset="Imagenes/invie.png 1x, Imagenes/invie2x.png 2x" width="186" height="60" alt="Logotipo Invie"/>            <!-- srcset="Imagenes/invie.png 1x PARA CARGAR IMGEN EN PANTALLA NO RETINA, Imagenes/invie2x.png 2x PARA PANTALLA RETINA 2X -->
        </figure>
        <span class="burguer-button icon-menu" id="burguer-button"></span>
        <nav class="menu" id="menu"><!-- menu -->
@@ -43,7 +44,7 @@
        <iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/2DU31dRGmAI" frameborder="0" allowfullscreen></iframe>
      </div>
      <article class="guitarra"><!-- guitarras 1 acustica -->                  <!-- **ES COMO UN TIPO DE BLOQUE-->
-       <img class="right" data-src="Imagenes/invie-acustica.png"alt="Guitarra Acustica"width="350" />
+       <img class="right" data-src="Imagenes/invie-acustica.png | Imagenes/invie-acustica2x.png"alt="Guitarra Acustica"width="350" />    <!--  cargar la imagen en no retina con DATA-SRC Imagenes/invie-acustica.png | Imagenes/invie2x.png cargar imagen con pantalla retina -->
       <div class="contenedor-guitarra-a">
         <h3 class="title-b">Invie Acustica</h3>
         <ol>                                          <!-- **LISTA  ORDENADA "1,2,3,4"-->
@@ -54,7 +55,7 @@
       </div>
      </article>
      <article class="guitarra b" > <!-- guitarra 2 clasica-->
-       <img class="left" data-src="Imagenes/invie-classic.png"alt="Guitarra Clasica" width="350" />                           <!-- /* data-src se utiliza para optimizar las imagenes, al momento de hacer scroll en el area no visible*/ -->
+       <img class="left" data-src="Imagenes/invie-classic.png |Imagenes/invie-classic2x.png"alt="Guitarra Clasica" width="350" />                           <!-- /* data-src se utiliza para optimizar las imagenes, al momento de hacer scroll en el area no visible*/ -->
        <div class="contenedor-guitarra-b">
          <h3 class="title-b">Invie Classic</h3>
          <ol>
@@ -69,7 +70,7 @@
    <footer class="footer">
      <div class="contenedor">
        <div class="contacto">
-         <img data-src="Imagenes/invie-white.png" alt="logotipo blanco">
+         <img data-src="Imagenes/invie-white.png | Imagenes/invie-white2x.png" alt="logotipo blanco">
          <a href="tel:+524642325"><strong>Telofono </strong><span>12345675</span></a>
          <a href="mailto:contacto@invie.com"><strong>E-mail </strong>contacto@invie.com<span></span></a>
        </div>

@@ -91,8 +91,9 @@ input:focus,textarea:focus{
   margin-bottom: 0;
   margin-top: 70px;
 }
-.titulo-a{
+.title-a{
   font-size: 24px;
+  margin-top: 0;
 }
 
 .title-b{
@@ -141,6 +142,8 @@ input:focus,textarea:focus{
 .menu{
   font-size: 24px;
   display: inline-block;
+  position: absolute;
+  right: 0;
 
 }
 
@@ -222,12 +225,6 @@ footer{
   padding: 50px 10px;
 }
 
-.footer-precios{
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-}
-
 .contacto{
   display: flex;
   width: 300px;
@@ -307,16 +304,24 @@ footer .contenedor{
   left: 20px;
   top: 20px;
   cursor: pointer;
+  color: white;
   z-index: 3;
   }
 
 @media screen and (max-width:800px) {
     /*portada*/
+  .tabla{
+    margin: 50px 20px;
+  }
+  .tabla .contenedor{
+    overflow: auto;
+    border: 1px solid #273b47
+  }
   .titulo{
     font-size: 45px;
     margin-top: 30px;
   }
-  .titulo-a{
+  .title-a{
     font-size: 18px;
   }
   .portada{
@@ -336,7 +341,7 @@ footer .contenedor{
       position: static;
       float: none;
     }
-    title-b{
+    .title-b{
       margin: 0;
     }
     .guitarra li{
@@ -423,6 +428,12 @@ footer .contenedor{
   .portada .contenedor{
     position: static;
   }
+  .header{
+    position: static;
+  }
+  .header .contenedor{
+    position: static;
+  }
   .menu{
     background: rgba(255, 60, 88, .8);
     position: absolute;
@@ -461,16 +472,17 @@ footer .contenedor{
     font-size: 30px;
   }
   .title-a{
-    font-size: 16px;
+    font-size: 24px;
   }
      /*portada*/
 
      /*guitarras*/
      .guitarra img{
        width: 200px;
+       height: 228px;
      }
      .title-b{
-       font-size: 20px;
+       font-size: 30px;
      }
      /*guitarras*/
 
@@ -491,7 +503,7 @@ footer .contenedor{
 
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2){     /*mediaQuery para resolucion retina*/
+@media screen and (-webkit-min-device-pixel-ratio: 2){     /*mediaQuery para resolucion retina en caso de blackground*/
   .background{
     background-image: url("../Imagenes/background2x.png");
   }

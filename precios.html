@@ -6,6 +6,7 @@
    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->  <!-- PAsamos esta liga, abajo para la optimizacion de la pagina en Allerta|Montserrat que son las dos fuentes  -->
    <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">
    <link rel="stylesheet" href ="css/style.css"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 
  </head>
 
@@ -16,7 +17,8 @@
        <figure class="logotipo"><!-- logotipo -->
          <img src="Imagenes/invie.png"width="186" height="60" alt="Logotipo Invie"/>
        </figure>
-       <nav class="menu"><!-- menu -->
+       <span class="burguer-button icon-menu" id="burguer-button"></span>
+       <nav class="menu" id="menu"><!-- menu -->
          <ul>                                       <!-- **LISTA NO ORDENADA "º"-->
            <li>                                     <!-- **OBJETO DE LA LISTA -->
              <a href="index.html">Home</a>            <!-- <a>PODEMOS PONER EL COMANDO href ES PARA DIRECCIONAR HACIA UNA RUTA EN ESTE CASO UN HTML -->
@@ -41,6 +43,9 @@
               <th>Modelo</th>
               <th>Precio</th>
               <th>Descripcion</th>
+              <th>Modelo</th>
+              <th>Precio</th>
+              <th>Descripción</th>
             </tr>
           </thead>
           <tbody>
@@ -48,15 +53,24 @@
               <td>Invie Acustica</td>
               <td>$100,000</td>
               <td>Esto es una guitarra muy ligera para facil transportacion  </td>
+              <td>Invie classic</td>
+              <td>$100000</td>
+              <td>Una guitarra muy pro</td>
             </tr>
             <tr>
               <td>Invie Clasic</td>
               <td>$100,000</td>
               <td>Guitarra echa en 100% madera, con tronco de roble para darle un estilo y una calidad clasica</td>
+              <td>Invie classic</td>
+              <td>$100000</td>
+              <td>Una guitarra muy pro</td>
             </tr>
             <tr>
               <td>Invie Custom</td>
               <td>$100,000</td>
+              <td>Una guitarra muy pro</td>
+              <td>Invie classic</td>
+              <td>$100000</td>
               <td>Una guitarra muy pro</td>
             </tr>
           </tbody>
@@ -110,6 +124,32 @@
         </form>
         </div>
       </footer>
+      <script>
+      //  Media Query en javascript
+      var consulta =window.matchMedia("(max-width: 500px)");
+      consulta.addListener(mediaQuery);
+
+      var $burguerButton = document.getElementById("burguer-button")
+      var $menu = document.getElementById("menu");
+      function toogleMenu(){
+        $menu.classList.toggle("active")
+      };
+      function mediaQuery(){
+        if (consulta.matches) {
+          $burguerButton.addEventListener("touchstart", toogleMenu);
+          console.log("se cumplio la condicion");
+
+        }else{
+          $burguerButton.removeEventListener("touchstart", toogleMenu);
+          console.log("no se cumplio la condicon ");
+        }
+      }
+      mediaQuery();
+      //Lazy loading
+      var bLazy = new Blazy({                                         //funcion para optimizar la carga de las imgenes
+        selector: "img"
+      });
+      </script>
        </body>
 
 

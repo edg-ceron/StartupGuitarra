@@ -4,7 +4,7 @@
    <meta charset="utf-8">
    <title>Invie - Guitarras </title>
    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->  <!-- PAsamos esta liga, abajo para la optimizacion de la pagina en Allerta|Montserrat que son las dos fuentes  -->
-   <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet">
    <link rel="stylesheet" href ="css/style.css"/>
    <!-- <link rel="stylesheet" media="(max-width:800px)" href="css/media-querie.css"> SI QUEREMOS AGREGAR EL MEDIA QUERIE EN UN EXTERNO-->
    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -113,7 +113,7 @@
    </footer>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>           <!-- Libreria para el blazy, optimizacion de imagenes -->
    <script>
-              //  Media Query en javascript
+   //  Media Query en javascript
    var consulta =window.matchMedia("(max-width: 500px)");
    consulta.addListener(mediaQuery);
 
@@ -135,13 +135,13 @@
    mediaQuery();
    //Lazy loading
    var bLazy = new Blazy({                                         //funcion para optimizar la carga de las imgenes
-    selector: "img"
-});
-  //  $burguerButton.addEventListener("touchstart", toogleMenu);
-  //  function toogleMenu(){
-  //    $menu.classList.toggle("active")
-  //  };
-               //  Media Query en javascript
+     selector: "img"
+   });
+   //  $burguerButton.addEventListener("touchstart", toogleMenu);
+   //  function toogleMenu(){
+   //    $menu.classList.toggle("active")
+   //  };
+   //  Media Query en javascript
    </script>
  </body>
 </html>

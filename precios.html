@@ -83,7 +83,7 @@
       <footer class="footer footer-precios">
         <div class="contenedor">
         <div class="contacto">
-          <img src="Imagenes/invie-white.png" alt="logotipo blanco">
+          <img data-src="Imagenes/invie-white.png" alt="logotipo blanco">
           <a href="tel:+524642325"><strong>Telofono </strong><span>12345675</span></a>
           <a href="mailto:contacto@invie.com"><strong>E-mail </strong>contacto@invie.com<span></span></a>
         </div>
@@ -124,6 +124,7 @@
         </form>
         </div>
       </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>           <!-- Libreria para el blazy, optimizacion de imagenes -->
       <script>
       //  Media Query en javascript
       var consulta =window.matchMedia("(max-width: 500px)");
@@ -146,7 +147,7 @@
       }
       mediaQuery();
       //Lazy loading
-      var bLazy = new Blazy({                                         //funcion para optimizar la carga de las imgenes
+      var bLazy = new Blazy({                   //funcion para optimizar la carga de las imgenes
         selector: "img"
       });
       </script>

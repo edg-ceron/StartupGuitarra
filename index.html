@@ -111,7 +111,7 @@
          <div class="col2">
            <label for="comentarios">Comentarios</label>
            <textarea name="comentarios" id="comentarios" rows="7" cols="30"></textarea>
-           <input type="submit"  value="Enviar" class="button">
+           <input type="submit"  value="Enviar" class="button footer-button">
          </div>
        </form>
      </div>
@@ -139,12 +139,15 @@
    var $menu = document.getElementById("menu");
    function toogleMenu(){
      $menu.classList.toggle("active")   //toggle=activa/desactiva
+       $burguerButton.classList.toggle("icon-close");
    };
    function showMenu(){
      $menu.classList.add("active")      //add=activa
+     $burguerButton.classList.toggle("icon-close");
    };
    function hideMenu(){
      $menu.classList.remove("active")    //remove=activa
+     $burguerButton.classList.toggle("icon-close");
    };
    function mediaQuery(){
      if (consulta.matches) {
